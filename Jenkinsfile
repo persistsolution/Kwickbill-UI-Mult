@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Clone Code From Github"){
             steps{
-                git url: "https://github.com/persistsolution/Kwickbill-UI.git", branch: "main"
+                git url: "https://github.com/persistsolution/Kwickbill-UI-Mult.git", branch: "main"
             }
         }
         stage("SonarQube Quality Analysis"){
