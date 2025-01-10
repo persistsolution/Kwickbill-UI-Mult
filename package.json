@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "sass": "sass ./src/assets/scss:./src/assets/css/",
     "sass-min": "sass ./src/assets/scss:./src/assets/css/ --style compressed"
+    "start": "react-scripts start --port 5175"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.9",
