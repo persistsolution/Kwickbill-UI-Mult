@@ -12,7 +12,7 @@ pipeline{
         stage("SonarQube Quality Analysis"){
             steps{
                 withSonarQubeEnv("Sonar"){
-                    sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=kwickbill -Dsonar.projectKey=kwickbill"
+                    sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=kwickbill-mul -Dsonar.projectKey=kwickbill-mul"
                 }
             }
         }
