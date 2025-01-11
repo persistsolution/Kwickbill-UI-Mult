@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "HOST=0.0.0.0 PORT=5176 react-scripts start",
+    "start": "HOST=0.0.0.0 PORT=5178 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
