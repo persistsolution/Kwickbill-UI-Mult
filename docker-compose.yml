@@ -1,21 +1,14 @@
-version: '3.8'
-
+version: "3.8"
 services:
   react-app:
-    container_name: kwickbill-ui-app-development
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "5177:5177"
-    volumes:
-      - .:/app
-      - /app/node_modules
-    stdin_open: true
-    tty: true
     environment:
       - HOST=0.0.0.0
       - PORT=5177
-
-volumes:
-  node_modules:
+    volumes:
+      - .:/app
+      - /app/node_modules
