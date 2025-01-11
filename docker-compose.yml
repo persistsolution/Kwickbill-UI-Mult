@@ -9,13 +9,13 @@ services:
     ports:
       - "5177:5177"
     volumes:
-      - ./src:/app/src
+      - .:/app
       - /app/node_modules
     stdin_open: true
     tty: true
     environment:
-      - CHOKIDAR_USEPOLLING=true
-      - NODE_ENV=development
+       - HOST=0.0.0.0
+      - PORT=5177
 
 volumes:
   node_modules:
